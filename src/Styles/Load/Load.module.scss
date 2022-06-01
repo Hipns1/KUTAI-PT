@@ -1,0 +1,27 @@
+.load_container {
+    height: 100vh;
+    width: 100%;
+
+    .load_principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+
+        img {
+            height: 250px;
+        }
+    }
+
+    .load_bottom {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 20vh;
+
+        img {
+            height: 100px;
+            margin-right: 40px;
+        }
+    }
+}

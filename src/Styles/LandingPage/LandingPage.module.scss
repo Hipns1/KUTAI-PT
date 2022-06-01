@@ -1,0 +1,111 @@
+.landing_container {
+    height: 100vh;
+    .landing_nav {
+        background: rgb(246, 102, 55);
+        background: linear-gradient(90deg, rgba(246, 102, 55, 1) 0%, rgba(254, 212, 0, 1) 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 50px;
+        height: 10vh;
+
+        img {
+            height: 80px;
+            margin-left: 70px;
+            margin-top: 100px;
+
+            @media (max-width: 1100px) {
+                margin: auto;
+            }
+        }
+    }
+
+    .landing_home {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background: rgb(246, 102, 55);
+        background: linear-gradient(90deg, rgba(246, 102, 55, 1) 0%, rgba(254, 212, 0, 1) 100%);
+
+        @media (max-width: 1100px) {
+            height: 100%;
+        }
+
+        div {
+            width: 650px;
+
+            @media (max-width: 1100px) {
+                margin-top: 50px;
+            }
+
+            @media (max-width: 700px) {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 60px;
+                font-weight: bold;
+                color: rgb(8, 9, 52);
+
+                @media (max-width: 700px) {
+                    font-size: 40px;
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+                font-weight: 400;
+                color: rgb(8, 9, 52);
+
+                @media (max-width: 700px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        img {
+            width: 600px;
+
+            @media (max-width: 1300px) {
+                width: 40%;
+            }
+
+            @media (max-width: 1100px) {
+                width: 70%;
+                margin-top: 100px;
+            }
+
+            @media (max-width: 700px) {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+
+        button {
+            background: rgb(254, 212, 0);
+            background: linear-gradient(90deg, rgba(254, 212, 0, 1) 0%, rgba(246, 102, 55, 1) 100%);
+            border: 1px dashed rgb(215, 213, 213);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s all ease-in-out;
+            height: 50px;
+            width: 200px;
+            cursor: pointer;
+            margin-top: 40px;
+
+            &:hover {
+                background: transparent;
+                border: 2px solid white;
+                color: white;
+                transform: scale(1.03);
+            }
+        }
+    }
+}
