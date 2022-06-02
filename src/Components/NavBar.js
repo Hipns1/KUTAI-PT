@@ -48,7 +48,7 @@ const NavBar = () => {
             className={styles.nav}>
             <nav className={styles.nav_container}>
                 <div className={styles.nav_logo}>
-                    <Link to="/"><img src={logo} /> </Link>
+                    <Link to="/"><img src={logo} alt="img"/> </Link>
                 </div>
                 <input type="checkbox" id="check" className={styles.nav_menu} />
                 <label
@@ -60,7 +60,6 @@ const NavBar = () => {
                 </label>
                 <div className={styles.nav_options} id="nav_options">
                     <Link onClick={() => handleClose()} to="/">Characters</Link>
-                    {/* <a onClick={() => handleClose()} href="#home">Favorites</a> */}
                     <Link onClick={() => handleClose()} to="/locations">Locations</Link>
                     <Link onClick={() => handleClose()} to="/episodes">Episodes</Link>
                     <a onClick={() => { handleLogout() }}>

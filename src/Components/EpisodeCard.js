@@ -1,9 +1,15 @@
 import React from 'react';
 import styles from "../Styles/Episodes.module.scss";
+import { motion } from "framer-motion";
 
 const EpisodeCard = ({ data }) => {
     return (
-        <div className={styles.epi_table__container}>
+        <motion.div
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className={styles.epi_table__container}>
             <table>
                 <thead>
                     <tr>
@@ -26,7 +32,7 @@ const EpisodeCard = ({ data }) => {
                     ))
                 }
             </table>
-        </div>
+        </motion.div>
     )
 }
 

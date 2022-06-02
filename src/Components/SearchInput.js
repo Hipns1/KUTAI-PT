@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { getData } from '../utils/getData';
 import styles from "../Styles/Search.module.scss";
 
