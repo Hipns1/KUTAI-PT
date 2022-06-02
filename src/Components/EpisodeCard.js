@@ -19,7 +19,7 @@ const EpisodeCard = ({ data }) => {
                         <th>Air Date</th>
                     </tr>
                 </thead>
-                {
+                {data.results ?
                     data.results?.map(epi => (
                         <tbody key={epi.id} className={styles.epi_card}>
                             <tr>
@@ -30,6 +30,15 @@ const EpisodeCard = ({ data }) => {
                             </tr>
                         </tbody>
                     ))
+
+                    : <tbody>
+                        <tr>
+                            <td><i className="fa-solid fa-x"></i></td>
+                            <td>We found episodes with this name</td>
+                            <td>No data</td>
+                            <td>No data</td>
+                        </tr>
+                    </tbody>
                 }
             </table>
         </motion.div>

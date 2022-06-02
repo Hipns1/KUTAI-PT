@@ -25,7 +25,7 @@ const NavBar = () => {
 
     //FUNCION PARA CERRAR EL MENU
     const handleClose = () => {
-        setIsOpen(false);
+        handleMenu();
         document.getElementById("check").checked = false;
     }
 

@@ -18,30 +18,26 @@
             border-radius: 8px;
             transition: 0.3s all ease-in-out;
 
-            a {
-                text-decoration: none;
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
 
-                img {
-                    width: 100%;
-                    border-radius: 8px;
-                }
+            h1 {
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 10px;
+                color: black;
+                text-align: center;
+            }
 
-                h1 {
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin-top: 10px;
-                    color: black;
-                    text-align: center;
-                }
-
-                h2 {
-                    font-size: 14px;
-                    font-weight: bold;
-                    margin-top: 5px;
-                    color: black;
-                    text-align: center;
-                    margin-bottom: 5px;
-                }
+            h2 {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 5px;
+                color: black;
+                text-align: center;
+                margin-bottom: 5px;
             }
 
             &:hover {
@@ -49,4 +45,8 @@
             }
         }
     }
+}
+
+a {
+    text-decoration: none;
 }

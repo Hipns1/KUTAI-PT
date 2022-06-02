@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "../Styles/Character.module.scss";
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import notfoundimg from "../Styles/Images/notfound.jpeg";
 
 const CharacterCard = ({ data }) => {
 
@@ -33,7 +34,15 @@ const CharacterCard = ({ data }) => {
                             </Link>
                         </motion.div>
                     ))
-                    : null
+                    : <motion.div
+                        initial={{ opacity: 0 }}
+                        transition={{ duration: 2, ease: "easeOut" }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        className={styles.char_card}>
+                        <img src={notfoundimg} alt="Not Found" />
+                        <h1>No results found</h1>
+                    </motion.div >
 
             }
         </div>
