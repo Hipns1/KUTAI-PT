@@ -1,0 +1,57 @@
+[debug] [2022-06-02T18:33:31.727Z] ----------------------------------------------------------------------
+[debug] [2022-06-02T18:33:31.730Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jesud\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-06-02T18:33:31.731Z] CLI Version:   10.7.2
+[debug] [2022-06-02T18:33:31.731Z] Platform:      win32
+[debug] [2022-06-02T18:33:31.731Z] Node Version:  v14.18.0
+[debug] [2022-06-02T18:33:31.732Z] Time:          Thu Jun 02 2022 13:33:31 GMT-0500 (Eastern Standard Time)
+[debug] [2022-06-02T18:33:31.732Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-02T18:33:31.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-02T18:33:31.832Z] > authorizing via signed-in user (jesudpf21@gmail.com)
+[debug] [2022-06-02T18:33:31.833Z] [iam] checking project kutai-pt for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-02T18:33:31.836Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kutai-pt:testIamPermissions [none]
+[debug] [2022-06-02T18:33:31.836Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kutai-pt:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-02T18:33:32.702Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kutai-pt:testIamPermissions 200
+[debug] [2022-06-02T18:33:32.703Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kutai-pt:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-02T18:33:32.704Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kutai-pt [none]
+[debug] [2022-06-02T18:33:33.387Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kutai-pt 200
+[debug] [2022-06-02T18:33:33.388Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kutai-pt {"projectId":"kutai-pt","projectNumber":"433532451213","displayName":"KUTAI-PT","name":"projects/kutai-pt","resources":{"hostingSite":"kutai-pt","storageBucket":"kutai-pt.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'kutai-pt'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-02T18:33:33.392Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kutai-pt [none]
+[debug] [2022-06-02T18:33:34.005Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kutai-pt 200
+[debug] [2022-06-02T18:33:34.005Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kutai-pt {"projectId":"kutai-pt","projectNumber":"433532451213","displayName":"KUTAI-PT","name":"projects/kutai-pt","resources":{"hostingSite":"kutai-pt","storageBucket":"kutai-pt.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2022-06-02T18:33:34.008Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions [none]
+[debug] [2022-06-02T18:33:34.008Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-02T18:33:35.334Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions 200
+[debug] [2022-06-02T18:33:35.334Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions {"name":"projects/433532451213/sites/kutai-pt/versions/63505589ee2bb13c","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[kutai-pt]: beginning deploy... 
+[info] i  hosting[kutai-pt]: found 13 files in build 
+[debug] [2022-06-02T18:33:35.349Z] [hosting] uploading with 200 concurrency
+[debug] [2022-06-02T18:33:35.355Z] [hosting] hash cache [YnVpbGQ] stored for 13 files
+[debug] [2022-06-02T18:33:35.356Z] [hosting][hash queue][FINAL] {"max":2,"min":1,"avg":1,"active":0,"complete":13,"success":13,"errored":0,"retried":0,"total":13,"elapsed":5}
+[debug] [2022-06-02T18:33:35.356Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions/63505589ee2bb13c:populateFiles [none]
+[debug] [2022-06-02T18:33:35.356Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions/63505589ee2bb13c:populateFiles {"files":{"/asset-manifest.json":"245df27c656595177948232a35f41150e45ced6b1f457282c49d935777b6736b","/index.html":"f256179b6c49a674232c6e236696af2722ba6d764132d19d53c4acff1a967431","/static/css/main.e53b6651.css":"c11ccbfb965881229591d8264a61b7a1efd7422898adebd0c01fbd4609d74bcd","/static/css/main.e53b6651.css.map":"6bc87fd199038385574f251b6b6bdde7201f6c515965402d4b9cfeaa20848b41","/static/js/main.612e5985.js":"582a6b81f27bb540aff1a5d3ea83e687dc3b0313a65c5bc3e342b9dd9320db99","/static/js/main.612e5985.js.LICENSE.txt":"89e58fcf59708c5504b0f9fb984af52207cf36fb4b939df343e4bbe27b107ed5","/static/js/main.612e5985.js.map":"d562538710823ddbd569bfbc7d8cdcab9698974c99fa4e9a0030659715683d03","/static/media/landingimg.9c6d535066b5ac72c87e.png":"ee25cf78faef096564b704beabe9e7876e2f76a8c9df906a2df7961afee57ef3","/static/media/load_rick.7ee79092c2e84ea146b4.gif":"6ec507721edf964f6409d6bedb568f6d950d0e7db951a2bde923acd8d10304ff","/static/media/location.a6716650dc4c1b94bd43.jpg":"4c47329d8a0deb21d78e30c4ef731cea2bb62ee0e191973ebb7906a157905e45","/static/media/login.28661e7a2a2e30cef008.png":"7ce8ea09ac7e7ae3b2eb5bae335dd9cd3e867cb743b95905488f3eb0543b5839","/static/media/login2.d88feb23b802c0d06d04.png":"3940ab68727ed367f5541b4c6ae58c21c2698fdb5e7187ab7d5e927bbe9e3ea3","/static/media/logo.0f7171841890737249fb.png":"d0e608758a0e146205185b4ed8307b85c2537e2c62adfa5f794a5e767e298ace"}}
+[debug] [2022-06-02T18:33:36.466Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions/63505589ee2bb13c:populateFiles 200
+[debug] [2022-06-02T18:33:36.466Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/433532451213/sites/kutai-pt/versions/63505589ee2bb13c:populateFiles {"uploadRequiredHashes":["6ec507721edf964f6409d6bedb568f6d950d0e7db951a2bde923acd8d10304ff","ee25cf78faef096564b704beabe9e7876e2f76a8c9df906a2df7961afee57ef3","7ce8ea09ac7e7ae3b2eb5bae335dd9cd3e867cb743b95905488f3eb0543b5839","3940ab68727ed367f5541b4c6ae58c21c2698fdb5e7187ab7d5e927bbe9e3ea3"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files"}
+[debug] [2022-06-02T18:33:36.469Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/6ec507721edf964f6409d6bedb568f6d950d0e7db951a2bde923acd8d10304ff [none]
+[debug] [2022-06-02T18:33:36.469Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/6ec507721edf964f6409d6bedb568f6d950d0e7db951a2bde923acd8d10304ff [stream]
+[debug] [2022-06-02T18:33:36.470Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/ee25cf78faef096564b704beabe9e7876e2f76a8c9df906a2df7961afee57ef3 [none]
+[debug] [2022-06-02T18:33:36.470Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/ee25cf78faef096564b704beabe9e7876e2f76a8c9df906a2df7961afee57ef3 [stream]
+[debug] [2022-06-02T18:33:36.471Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/7ce8ea09ac7e7ae3b2eb5bae335dd9cd3e867cb743b95905488f3eb0543b5839 [none]
+[debug] [2022-06-02T18:33:36.472Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/7ce8ea09ac7e7ae3b2eb5bae335dd9cd3e867cb743b95905488f3eb0543b5839 [stream]
+[debug] [2022-06-02T18:33:36.473Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/3940ab68727ed367f5541b4c6ae58c21c2698fdb5e7187ab7d5e927bbe9e3ea3 [none]
+[debug] [2022-06-02T18:33:36.473Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/3940ab68727ed367f5541b4c6ae58c21c2698fdb5e7187ab7d5e927bbe9e3ea3 [stream]
+[debug] [2022-06-02T18:33:36.474Z] [hosting][populate queue][FINAL] {"max":1114,"min":1114,"avg":1114,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1120}
+[debug] [2022-06-02T18:33:36.474Z] [hosting] uploads queued: 4
+[debug] [2022-06-02T18:34:06.878Z] [uploadQueue] Retrying task ee25cf78faef096564b704beabe9e7876e2f76a8c9df906a2df7961afee57ef3
+[debug] [2022-06-02T18:34:06.879Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/ee25cf78faef096564b704beabe9e7876e2f76a8c9df906a2df7961afee57ef3 [none]
+[debug] [2022-06-02T18:34:06.880Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/ee25cf78faef096564b704beabe9e7876e2f76a8c9df906a2df7961afee57ef3 [stream]
+[debug] [2022-06-02T18:34:06.881Z] [uploadQueue] Retrying task 7ce8ea09ac7e7ae3b2eb5bae335dd9cd3e867cb743b95905488f3eb0543b5839
+[debug] [2022-06-02T18:34:06.881Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/7ce8ea09ac7e7ae3b2eb5bae335dd9cd3e867cb743b95905488f3eb0543b5839 [none]
+[debug] [2022-06-02T18:34:06.882Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/7ce8ea09ac7e7ae3b2eb5bae335dd9cd3e867cb743b95905488f3eb0543b5839 [stream]
+[debug] [2022-06-02T18:34:06.883Z] [uploadQueue] Retrying task 3940ab68727ed367f5541b4c6ae58c21c2698fdb5e7187ab7d5e927bbe9e3ea3
+[debug] [2022-06-02T18:34:06.883Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/3940ab68727ed367f5541b4c6ae58c21c2698fdb5e7187ab7d5e927bbe9e3ea3 [none]
+[debug] [2022-06-02T18:34:06.884Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/kutai-pt/versions/63505589ee2bb13c/files/3940ab68727ed367f5541b4c6ae58c21c2698fdb5e7187ab7d5e927bbe9e3ea3 [stream]

@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# PRUEBA TECNICA  - JESUS DAVID PEREZ FERRER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_En esta prueba desarrollamos una pagina web consumiendo la API publica de Rick y Morty, en esta podras consultar todos los personajes, poder filtrarlos por nombre exacto y nombre aproximado; ademas de incluir un registro episodios y locaciones de la serie. Puedes registrarte con correo/email, o haciendo uso de tu cuenta de Google._
 
-## Available Scripts
+## Setup 🚀
 
-In the project directory, you can run:
+_Necesitas tener instalado [Node.js](https://nodejs.org/en/) en tu computadora_
 
-### `npm start`
+1. Clona el repositorio. Puedes usar el siguiente enlace: (https://github.com/Hipns1/KUTAI-PT).
+2. Ingresa el comando `$ npm install` para instalar todas las dependencias del proyecto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Corriendo el proyecto 📋
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Ingresa el comando `npm start` para correr el proyecto.
+2. Visita `http://localhost:3000` para visualizarlo.
 
-### `npm test`
+### Build 🔧
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Corre el comando `npm run build` para generar una build de producción que quedara guardada en la carpeta /build que se encuentra en la raiz del proyecto_
 
-### `npm run build`
+## Ejecutando las pruebas ⚙️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Para correr las pruebas automatizadas de este proyecto, utiliza el comando `npm run test`, y luego presiona la tecla **a** para correr todos los test._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Despliegue 📦
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Puedes ver el despliegue de esta página en: [Pokedex - JDPF](https://pokedex-562f3.web.app/)_
 
-### `npm run eject`
+## Construido con 🛠️
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+_Las herramientas que usé para construir esta pagina son las siguientes:_
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React.js](https://es.reactjs.org/) - Libreria de JS usada
+- [Firebase](https://firebase.google.com/docs/web/setup) - Usado para la autenticacion
+- [Sass](https://sass-lang.com/) - Preprocesador de CSS usado
+- [Framer-Motion](https://framer.com/motion/) - Animaciones
+- [React-Router](https://reacttraining.com/react-router/) - Manejador de rutas
+- [React-Redux](https://redux.js.org/) - Manejador de estados
+- [Formik](https://formik.org/) - Manejador de formularios
+- [Yup](https://www.npmjs.com/package/yup) - Manejador de validaciones en los formularios
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Autor ✒️
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Jesús David Pérez Ferrer** - [Hipns1](https://github.com/Hipns1).
+⌨️ con ❤️ por [Hipns1](https://github.com/Hipns1) 😊
