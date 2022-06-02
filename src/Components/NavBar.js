@@ -60,9 +60,9 @@ const NavBar = () => {
                 </label>
                 <div className={styles.nav_options} id="nav_options">
                     <Link onClick={() => handleClose()} to="/">Characters</Link>
-                    <a onClick={() => handleClose()} href="#home">Favorites</a>
+                    {/* <a onClick={() => handleClose()} href="#home">Favorites</a> */}
                     <Link onClick={() => handleClose()} to="/locations">Locations</Link>
-                    <a onClick={() => handleClose()} href="#projects">Episodes</a>
+                    <Link onClick={() => handleClose()} to="/episodes">Episodes</Link>
                     <a onClick={() => { handleLogout() }}>
                         <i className="fa-solid fa-arrow-right-from-bracket"></i>
                     </a>

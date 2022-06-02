@@ -1,17 +1,25 @@
 //estilos de la busqueda
-.search_container{
-    width: 100%;
+.search_container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
+    text-align: center;
 
-    input{
+    @media (max-width: 310px) {
+        width: 100%;     
+    }
+
+    input {
         height: 40px;
         width: 300px;
         padding: 10px;
         border-radius: 4px;
         outline: none;
-        border: 2px solid #cfcfcfdb;    
+        border: 2px solid #cfcfcfdb;
+
+        @media (max-width: 310px) {
+            width: 90%;
+        }
     }
 }

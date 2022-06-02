@@ -15,7 +15,7 @@ const SearchInput = ({ setData, setPage, url }) => {
     return (
         <div className={styles.search_container}>
             <form onChange={handleChange}>
-                <input type="text" placeholder="Search for a character by name..." />
+                <input type="text" placeholder="Search..." />
             </form>
         </div>
     )

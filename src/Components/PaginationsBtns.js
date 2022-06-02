@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../Styles/PaginationBtns.module.scss";
 
-const PaginationsBtns = ({ data, page, handleData, setPage }) => {
+const PaginationsBtns = ({ data, page, handleData, setPage}) => {
 
     //PAGINACION
     const handleDataPrev = (url) => {

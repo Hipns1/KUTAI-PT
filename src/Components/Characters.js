@@ -10,7 +10,7 @@ const Characters = () => {
     const urlSearch = "https://rickandmortyapi.com/api/character/?name=";
     const [data, setData] = useState([])
     const [page, setPage] = useState(1)
-
+    
     //FUNCION PARA CONSUMIR API
     const handleData = async (url) => {
         const data = await getData(url)
