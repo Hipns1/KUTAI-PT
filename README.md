@@ -31,7 +31,7 @@ _Puedes ver el despliegue de esta página en: [Pokedex - JDPF](https://pokedex-5
 _Las herramientas que usé para construir esta pagina son las siguientes:_
 
 - [React.js](https://es.reactjs.org/) - Libreria de JS usada
-- [Firebase](https://firebase.google.com/docs/web/setup) - Usado para la autenticacion
+- [Firebase](https://firebase.google.com/docs/web/setup) - Autenticacion de usuarios
 - [Sass](https://sass-lang.com/) - Preprocesador de CSS usado
 - [Framer-Motion](https://framer.com/motion/) - Animaciones
 - [React-Router](https://reacttraining.com/react-router/) - Manejador de rutas
