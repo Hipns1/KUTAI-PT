@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { getData } from '../utils/getData';
-import styles from "../Styles/Character.module.scss";
+import styles from "../Styles/Search.module.scss";
 
-const SearchInput = ({ setData, setPage }) => {
+const SearchInput = ({ setData, setPage, url }) => {
 
     const handleChange = async (e) => {
-        let name = e.target.value;
-        const url = `https://rickandmortyapi.com/api/character/?name=${name}`;
-        const data = await getData(url)
+        let query = e.target.value;
+        const urlSearch = url + query;
+        const data = await getData(urlSearch)
         setData(data)
         setPage(1)
     }
