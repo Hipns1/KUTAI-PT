@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+.dash_container {
+    display: flex;
+
+    .dash_menu {
+        border: 30px solid rgba(254, 212, 0, 1);
+    }
+
+    .dash_routes {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+.modal-dialog{
+    max-width: 60% !important;
+    @media (max-width: 800px) {
+        max-width: 95% !important;
+    
+        
+    }
+}
+
+//estilos para la pagina de inicio
+//color dependiendo del tipo de pokemon
+.Alive{
+    color: green;
+}
+.Dead{
+    color: red;
+}
+.unknown {
+    color: gray;
+}

@@ -1,1 +1,0 @@
-export const emailAdmin = 'pokedex@admin.com';

@@ -1,6 +1,6 @@
 import { getAuth, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth"
 import Swal from "sweetalert2"
-import { facebook, google } from "../../Firebase/credentials"
+import { google } from "../../Firebase/credentials"
 import { typesLogin } from "../types/types"
 
 
@@ -10,7 +10,7 @@ export const logoutAsync = () => {
     return (dispatch) => {
         const auth = getAuth()
         signOut(auth)
-            .then(( user ) => {
+            .then((user) => {
                 dispatch(logoutSync())
             })
             .catch(error => {
@@ -35,6 +35,12 @@ export const loginGoogle = () => {
         signInWithPopup(auth, google)
             .then(({ user }) => {
                 localStorage.setItem('email', user.email)
+                Swal.fire({
+                    icon: 'success',
+                    title: `Bienvenido ${user.displayName}`,
+                    showConfirmButton: false,
+                    timer: 2500
+                })
             })
             .catch(error => {
                 Swal.fire(
@@ -46,26 +52,6 @@ export const loginGoogle = () => {
     }
 }
 
-//Login con Facebook
-export const loginFacebook = () => {
-    return (dispatch) => {
-        const auth = getAuth()
-        signInWithPopup(auth, facebook)
-            .then(({ user }) => {
-                localStorage.setItem('email', user.email)
-            })
-            .catch(error => {
-                Swal.fire(
-                    'Error',
-                    'Este email ya fue registrado, por favor intente con una cuenta de Facebook diferente',
-                    'error'
-                )
-            })
-    }
-}
-
-
-
 //validar usuario y Contraseña
 export const loginEmailPassAsync = (email, password) => {
     return (dispatch) => {
@@ -73,6 +59,12 @@ export const loginEmailPassAsync = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then(({ user }) => {
                 dispatch(loginSincronico(user.email, user.password))
+                Swal.fire({
+                    icon: 'success',
+                    title: `Bienvenido ${user.displayName}`,
+                    showConfirmButton: false,
+                    timer: 2500
+                })
             })
             .catch(error => {
                 Swal.fire(

@@ -3,11 +3,10 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { loginEmailPassAsync, loginFacebook, loginGoogle } from '../Redux/actions/actionLogin';
-import styles from "../Styles/Login_Register/Login.module.scss";
+import { loginEmailPassAsync, loginGoogle } from '../Redux/actions/actionLogin';
+import styles from "../Styles/Login.module.scss";
 import { motion } from 'framer-motion';
-import pokelogo from "../Styles/Images/pokelogo.png";
-import mewto from "../Styles/Images/mewto.png";
+import logologin from "../Styles/Images/login.png"
 
 const SignupSchema = Yup.object().shape({
     email: Yup.string()
@@ -34,11 +33,6 @@ const Login = () => {
         dispatch(loginGoogle())
     }
 
-    //FUNCION PARA INICIAR SESION CON FACEBOOK
-    const handleFacebook = () => {
-        dispatch(loginFacebook())
-    }
-
     return (
         <div className={styles.login_container}>
 
@@ -47,7 +41,7 @@ const Login = () => {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
                 className={styles.login_img}>
-                {/* <img src={mewto} alt="mewto" /> */}
+                <img src={logologin} alt="mewto" />
             </motion.div>
 
             <motion.div
@@ -55,10 +49,6 @@ const Login = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}>
-                <div className={styles.login_logo}>
-                   {/*  <Link to="/"><img src={pokelogo} alt=""></img> </Link> */}
-                </div>
-
                 <div className={styles.login_form}>
                     <Formik
                         initialValues={{
@@ -105,22 +95,20 @@ const Login = () => {
                         )}
                     </Formik>
                 </div>
-                
+
                 <div className={styles.bar}></div>
 
                 <div className={styles.login_social__btn}>
-                    <button onClick={handleGoogle}   >
+                    <button
+                        style={{ "backgroundColor": "#db4a39" }}
+                        onClick={handleGoogle}   >
                         <i className="fa-brands fa-google"></i>
-                    </button>
-
-                    <button onClick={handleFacebook} >
-                        <i className="fa-brands fa-facebook"></i>
                     </button>
                 </div>
 
                 <div className={styles.login_change}>
                     <h1 ><span>¿Eres nuevo?</span></h1>
-                    <Link style={{textDecoration: "none"}} to="/register"><button>Crea tu cuenta Pokedex</button></Link>
+                    <Link style={{ textDecoration: "none" }} to="/register"><button>Crea una cuenta</button></Link>
                 </div>
             </motion.div>
         </div>

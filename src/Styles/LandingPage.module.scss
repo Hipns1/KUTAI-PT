@@ -1,8 +1,9 @@
 .landing_container {
     height: 100vh;
+
     .landing_nav {
-        background: rgb(246, 102, 55);
-        background: linear-gradient(90deg, rgba(246, 102, 55, 1) 0%, rgba(254, 212, 0, 1) 100%);
+        background: rgb(151, 206, 76);
+        background: linear-gradient(90deg, rgba(151, 206, 76, 1) 39%, rgba(240, 225, 74, 1) 84%);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -26,8 +27,8 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        background: rgb(246, 102, 55);
-        background: linear-gradient(90deg, rgba(246, 102, 55, 1) 0%, rgba(254, 212, 0, 1) 100%);
+        background: rgb(151, 206, 76);
+        background: linear-gradient(90deg, rgba(151, 206, 76, 1) 39%, rgba(240, 225, 74, 1) 84%);
 
         @media (max-width: 1100px) {
             height: 100%;
@@ -38,6 +39,10 @@
 
             @media (max-width: 1100px) {
                 margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
 
             @media (max-width: 700px) {
@@ -58,9 +63,13 @@
                 font-size: 20px;
                 font-weight: 400;
                 color: rgb(8, 9, 52);
+                width: 600px; ;  
 
                 @media (max-width: 700px) {
                     font-size: 16px;
+                    width: auto;
+                    text-align: center;
+                    margin-top: 10px;
                 }
             }
         }
@@ -84,10 +93,9 @@
         }
 
         button {
-            background: rgb(254, 212, 0);
-            background: linear-gradient(90deg, rgba(254, 212, 0, 1) 0%, rgba(246, 102, 55, 1) 100%);
+            background-color: #f0e14a;
             border: 1px dashed rgb(215, 213, 213);
-            color: white;
+            color: rgb(8, 9, 52);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -96,7 +104,7 @@
             border-radius: 50px;
             transition: 0.3s all ease-in-out;
             height: 50px;
-            width: 200px;
+            width: 150px;
             cursor: pointer;
             margin-top: 40px;
 

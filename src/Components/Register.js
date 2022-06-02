@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 import { Field, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import { registerAsync } from '../Redux/actions/actionRegister';
-import styles from "../Styles/Login_Register/Login.module.scss";
+import styles from "../Styles/Login.module.scss";
 import { motion } from 'framer-motion';
-import pokelogo from "../Styles/Images/pokelogo.png";
-import mewto from "../Styles/Images/mewto.png";
+import logologin from "../Styles/Images/login.png"
 
 //VALIDACIONES DE CADA INPUT
 const SignupSchema = Yup.object().shape({
@@ -45,7 +44,7 @@ const Register = () => {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
                 className={styles.login_img}>
-                {/* <img src={mewto} alt="mewto" /> */}
+                <img src={logologin} alt="mewto" />
             </motion.div>
 
             <motion.div
