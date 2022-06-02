@@ -8,11 +8,3 @@ export const typesLogin ={
 export const typesRegister ={
     register: 'register'
 }
-
-//Types del CRUD del Maestro Pokemon
-export const typesMaestroPokemon ={
-    add: 'add',
-    edit: 'edit',
-    delete: 'delete',
-    list: 'list'
-}

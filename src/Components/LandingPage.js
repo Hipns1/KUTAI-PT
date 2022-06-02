@@ -23,7 +23,7 @@ const LandingPage = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1 }}
                     src={logo}
-                    alt="pokelogo" />
+                    alt="logo" />
             </nav>
 
             <div className={styles.landing_home}>
@@ -34,12 +34,12 @@ const LandingPage = () => {
                     <h1>Rick and Morty APP</h1>
                     <h2>
                         <b>
-                            Esta página de Rick y Morty utiliza una API publica
-                            para consultar los personajes, locaciones y
-                            capítulos de la serie. Permite encontrar tu
-                            personaje favorito entre todos los demás por
-                            medio de un buscador, además de ofrecerte
-                            información detallada del mismo.
+                        This Rick and Morty page uses a public API 
+                        to query the characters, locations, and episodes 
+                        of the series. It allows you to find your 
+                        favorite character among all the others 
+                        through a search engine, in addition to 
+                        offering you detailed information about it.
                         </b>
                     </h2>
                     <button onClick={() => redirectionLogin()}> Iniciar </button>

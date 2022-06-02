@@ -1,5 +1,5 @@
 .nav_container {
-    background-color: #98ce4cdb;
+    background-color: #98ce4cea;
     height: 8vh;
     width: 100%;
     display: flex;
@@ -22,7 +22,6 @@
         display: block;
         font-size: 26px;
         margin-right: 50px;
-        /* transition: all 0.3s ease-in-out; */
 
         &:hover {
             transform: scale(1.05);
@@ -57,7 +56,7 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color: #98ce4cdb;
+        background-color: #98ce4cf8;
         text-align: center;
         transition: 0.3s all ease;
         flex-direction: column;

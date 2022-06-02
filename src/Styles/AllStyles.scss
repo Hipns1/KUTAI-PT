@@ -19,23 +19,57 @@
         width: 100%;
     }
 }
-.modal-dialog{
+
+.modal-dialog {
     max-width: 60% !important;
+
     @media (max-width: 800px) {
         max-width: 95% !important;
-    
-        
+
+
     }
 }
 
 //estilos para la pagina de inicio
-//color dependiendo del tipo de pokemon
-.Alive{
+//color dependiendo del estado
+.Alive {
     color: green;
+    font-weight: bold;
+
+    &::after {
+        content: ".";
+        width: 20px;
+        height: 20px;
+        color: green;
+        font-size: 60px;
+        line-height: 0;
+    }
 }
-.Dead{
+
+.Dead {
     color: red;
+    font-weight: bold;
+
+    &::after {
+        content: ".";
+        width: 20px;
+        height: 20px;
+        color: red;
+        font-size: 60px;
+        line-height: 0;
+    }
 }
+
 .unknown {
     color: gray;
+    font-weight: bold;
+
+    &::after {
+        content: ".";
+        width: 20px;
+        height: 20px;
+        color: gray;
+        font-size: 60px;
+        line-height: 0;
+    }
 }

@@ -52,9 +52,6 @@ const Register = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}>
-                <div className={styles.login_logo}>
-                   {/*  <Link to="/"><img src={pokelogo} alt=""></img> </Link> */}
-                </div>
 
                 <div className={styles.login_form}>
                     <Formik

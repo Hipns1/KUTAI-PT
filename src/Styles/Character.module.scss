@@ -10,8 +10,8 @@
 
         .char_card {
             width: 240px;
-            height: 320px;
-            margin: 30px 30px;
+            min-height: 320px;
+            margin: 30px 10px;
             -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -40,6 +40,7 @@
                     margin-top: 5px;
                     color: black;
                     text-align: center;
+                    margin-bottom: 5px;
                 }
             }
 
@@ -82,5 +83,23 @@
             font-size: 18px;
             font-weight: bold;
         }
+    }
+}
+
+//estilos de la busqueda
+.search_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+    input{
+        height: 40px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 4px;
+        outline: none;
+        border: 2px solid #cfcfcfdb;    
     }
 }

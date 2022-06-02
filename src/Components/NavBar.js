@@ -25,8 +25,8 @@ const NavBar = () => {
 
     //FUNCION PARA CERRAR EL MENU
     const handleClose = () => {
-        handleMenu();
-        document.getElementById("check").click();
+        setIsOpen(false);
+        document.getElementById("check").checked = false;
     }
 
     //FUNCION PARA LOGOUT
@@ -61,7 +61,7 @@ const NavBar = () => {
                 <div className={styles.nav_options} id="nav_options">
                     <Link onClick={() => handleClose()} to="/">Characters</Link>
                     <a onClick={() => handleClose()} href="#home">Favorites</a>
-                    <a onClick={() => handleClose()} href="#about">Locations</a>
+                    <Link onClick={() => handleClose()} to="/locations">Locations</Link>
                     <a onClick={() => handleClose()} href="#projects">Episodes</a>
                     <a onClick={() => { handleLogout() }}>
                         <i className="fa-solid fa-arrow-right-from-bracket"></i>
