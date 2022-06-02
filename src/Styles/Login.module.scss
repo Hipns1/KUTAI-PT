@@ -83,8 +83,9 @@
                 .login_error {
                     color: red;
                     font-size: 13px;
-                    margin-top: -18px;
+                    margin-top: -10px !important;
                     font-style: italic;
+                    margin-bottom: 10px !important ;
                 }
             }
         }

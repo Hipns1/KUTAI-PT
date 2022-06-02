@@ -11,8 +11,8 @@ const DashboardRoutes = () => {
 			<div>
 				<NavBar />
 				<Routes>
-					<Route path='/' element={<Characters />} />
-					<Route path='*' element={<Navigate to='/' />} />
+					<Route path='/home' element={<Characters />} />
+					<Route path='*' element={<Navigate to='/home' />} />
 					<Route path='/characters/:id' element={<Detail />} />
 					<Route path='/locations' element={<Locations />} />
 					<Route path='/episodes' element={<Episodes />} />

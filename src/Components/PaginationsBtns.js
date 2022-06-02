@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "../Styles/PaginationBtns.module.scss";
 
-const PaginationsBtns = ({ data, page, handleData, setPage}) => {
+const PaginationsBtns = ({ data, page, handleData, setPage }) => {
 
     //PAGINACION
     const handleDataPrev = (url) => {
@@ -19,19 +19,27 @@ const PaginationsBtns = ({ data, page, handleData, setPage}) => {
 
     return (
         <div>
-            {
-                data.results?.length >= 20
-                    ? <div className={styles.page_btns}>
-                        <button onClick={() => handleDataPrev(data.info.prev)}>
-                            <i className="fa-solid fa-angles-left"></i>
-                        </button>
-                        <span>{page}</span>
+            <div className={styles.page_btns}>
+                {data.info?.prev ?
+                    <button onClick={() => handleDataPrev(data.info.prev)}>
+                        <i className="fa-solid fa-angles-left"></i>
+                    </button>
+                    : null
+                }
+                {
+                    data.info?.next || data.info?.prev
+                        ? <span>{page}</span>
+                        : null
+                }
+                {
+                    data.info?.next ?
                         <button onClick={() => handleDataNext(data.info.next)}>
                             <i className="fa-solid fa-angles-right"></i>
                         </button>
-                    </div>
-                    : null
-            }
+                        : null
+                }
+            </div>
+
         </div>
     )
 }
