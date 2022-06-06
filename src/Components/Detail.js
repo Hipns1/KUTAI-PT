@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getData } from '../utils/getData';
 import styles from "../Styles/Details.module.scss";
+import AddFavorite from './AddFavorite';
 
 const Detail = () => {
     const id = localStorage.getItem('id');
@@ -23,9 +24,12 @@ const Detail = () => {
                     ? <div className={styles.detail_card}>
                         <img src={data.image} alt={data.name} />
                         <div className={styles.detail_card__text}>
-                            <h1>{data.name},
-                                <span>{data.id}</span>
-                            </h1>
+                            <div className={styles.detail_card__fav}>
+                                <AddFavorite data={data} />
+                                <h1>
+                                    {data.name},<span>{data.id}</span>
+                                </h1>
+                            </div>
                             <p>Gender:
                                 <span>{data.gender}</span>
                             </p>

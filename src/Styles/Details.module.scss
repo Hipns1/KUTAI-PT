@@ -30,18 +30,26 @@
                 margin-left: 0;
             }
 
-            h1 {
-                font-size: 36px;
+            .detail_card__fav {
+                display: flex;
+                align-items: center;
                 margin-bottom: 20px;
 
-                @media (max-width: 680px) {
-                    font-size: 30px;
-                }
+                h1 {
+                    display: flex;
+                    text-align: center;
+                    vertical-align: center;
+                    font-size: 36px;
 
-                span {
-                    font-size: 20px;
-                    font-weight: bold;
-                    margin-left: 10px;
+                    @media (max-width: 680px) {
+                        font-size: 30px;
+                    }
+
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-left: 10px;
+                    }
                 }
             }
 
@@ -63,4 +71,25 @@
 
         }
     }
+}
+
+//ESTILOS DEL FAVORITO
+.add_container {
+    margin-right: 8px;
+    label {
+        color: rgb(190, 190, 190);
+        font-size: 25px;
+    }
+
+    input {
+        display: none;
+    }
+
+    i{
+        cursor: pointer;
+    }
+}
+
+.add_container input:checked~label {
+    color: #f0e14a;
 }

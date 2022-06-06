@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import notfoundimg from "../Styles/Images/notfound.jpeg";
 
 const CharacterCard = ({ data }) => {
-
     const handleDetail = (id) => {
         localStorage.setItem('id', id)
     }

@@ -26,7 +26,7 @@ const NavBar = () => {
     //FUNCION PARA CERRAR EL MENU
     const handleClose = () => {
         handleMenu();
-        document.getElementById("check").checked = false;
+        document.getElementById("checknav").checked = false;
     }
 
     //FUNCION PARA LOGOUT
@@ -50,9 +50,9 @@ const NavBar = () => {
                 <div className={styles.nav_logo}>
                     <Link to="/home"><img src={logo} alt="img"/> </Link>
                 </div>
-                <input type="checkbox" id="check" className={styles.nav_menu} />
+                <input type="checkbox" id="checknav" className={styles.nav_menu} />
                 <label
-                    htmlFor="check"
+                    htmlFor="checknav"
                     className={styles.nav_label}
                     onClick={() => handleMenu()}>
                     <i className="fa-solid fa-bars" id="bar"></i>
@@ -60,6 +60,7 @@ const NavBar = () => {
                 </label>
                 <div className={styles.nav_options} id="nav_options">
                     <Link onClick={() => handleClose()} to="/home">Characters</Link>
+                    <Link onClick={() => handleClose()} to="/favorites">Favorites</Link>
                     <Link onClick={() => handleClose()} to="/locations">Locations</Link>
                     <Link onClick={() => handleClose()} to="/episodes">Episodes</Link>
                     <a onClick={() => { handleLogout() }}>
